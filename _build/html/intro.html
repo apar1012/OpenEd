@@ -60,7 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Markdown Files" href="markdown.html" />
+    <link rel="next" title="Setup and Preliminary Instructions" href="installation.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -235,7 +235,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+      <li><a href="https://github.com/apar1012/OpenEd.git" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -252,7 +252,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/apar1012/OpenEd.git/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -390,20 +390,35 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-ip3-autonomous-driving-challenge">
 <h1>Introduction to IP3: Autonomous Driving Challenge<a class="headerlink" href="#introduction-to-ip3-autonomous-driving-challenge" title="Link to this heading">#</a></h1>
-<p>In this course, you and your team will take a remotely operated electric toy car and make it drive autonomously. The car called ‘’KITT’’ can communicate to a base station (your computer) via Bluetooth and has a pair of distance (anti-collision) sensors and an audio beacon on top. During a final competition, you are asked to demonstrate your achievements in several ‘’tasks’’, i.e., races of increasing difficulty. All of which will be explained further in detail in the form of modules and snippets of code to aid each task.</p>
+<p>The goal of the project is to use an electric toy car (with added functionality) which can be remotely operated, to detect obstacles in front of it and communicate with a base station (essentially your own personal computer device) to perform localisation, trajectory tracking and collision avoidance.
+The car called ‘’KITT’’ can communicate to a base station (your computer) via Bluetooth and has a pair of distance (anti-collision) sensors and an audio beacon on top. During a final competition, you are asked to demonstrate your achievements in several ‘’tasks’’, i.e., races of increasing difficulty. All of which will be explained further in detail in the form of modules and snippets of code to aid each task.</p>
+<figure class="align-default" id="setup">
+<img alt="_images/intro_setup.jpg" src="_images/intro_setup.jpg" />
+<figcaption>
+<p><span class="caption-text">General Layout</span><a class="headerlink" href="#setup" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>It starts off with some introductory modules for installation and basic concepts, followed by the modules related to the physics of the car and system integration.</p>
 <section id="modules">
 <h2>Modules<a class="headerlink" href="#modules" title="Link to this heading">#</a></h2>
-<p>The overall goal of the project is to take a standard toy car with added functionality so that it can be remotely operated, can detect obstacles in front of it, and can communicate with a base station (your PC), which performs calculations such as location estimation, trajectory tracking, and collision avoidance. All of these functionalities needs to be described clearly along with proper documentation and analyse results.</p>
 <p>The modules are as follows,</p>
 <ol class="arabic simple">
+<li><p>Installation and Setup</p></li>
+<li><p>Basics</p>
+<ul class="simple">
+<li><p>Project</p></li>
+<li><p>Python</p></li>
+<li><p>Signal processing</p></li>
+</ul>
+</li>
 <li><p>Communicating with KITT. (Modules 1 and 2)</p></li>
 <li><p>Localization using microphones. (Module 3)</p></li>
 <li><p>Path planning and System integration. (Modules 4 and 5)</p></li>
 </ol>
-<p>Division of tasks can be done according to the communication with KITT and developing the localization algorithm. Now as the TDOA algorithm needs to be introduced as well, it would be best if some initial concepts are introduced.</p>
-<p>Check out the content pages bundled with this sample book to see more.</p>
+<p>Division of tasks can be done according to the communication with KITT and developing the localization algorithm.</p>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Setup and Preliminary Instructions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Module 1 - Connecting with and Controlling KITT</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
@@ -416,7 +431,7 @@ document.write(`
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
+            repo: "apar1012/OpenEd.git",
             ref: "master",
         },
         codeMirrorConfig: {
@@ -443,11 +458,11 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="right-next"
-       href="markdown.html"
+       href="installation.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Markdown Files</p>
+        <p class="prev-next-title">Setup and Preliminary Instructions</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
