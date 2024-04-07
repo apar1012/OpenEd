@@ -233,19 +233,19 @@
       
       
       
-      <li>
-<button onclick="initThebeSBT()"
-  class="btn btn-sm btn-launch-thebe dropdown-item"
-  title="Launch Thebe"
-  data-bs-placement="left" data-bs-toggle="tooltip"
+      <li><a href="https://colab.research.google.com/github/apar1012/OpenEd/blob/master/markdown-notebooks.md" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
-  <i class="fas fa-play"></i>
+  
+    <img src="_static/images/logo_colab.png">
   </span>
-<span class="btn__text-container">Live Code</span>
-</button>
+<span class="btn__text-container">Colab</span>
+</a>
 </li>
       
   </ul>
@@ -264,7 +264,7 @@
       
       
       
-      <li><a href="https://github.com/apar1012/OpenEd.git" target="_blank"
+      <li><a href="https://github.com/apar1012/OpenEd" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -281,7 +281,7 @@
       
       
       
-      <li><a href="https://github.com/apar1012/OpenEd.git/issues/new?title=Issue%20on%20page%20%2Fmarkdown-notebooks.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/apar1012/OpenEd/issues/new?title=Issue%20on%20page%20%2Fmarkdown-notebooks.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -487,7 +487,7 @@ See the YAML at the top of this page for example.</p></li>
     {
         requestKernel: true,
         binderOptions: {
-            repo: "apar1012/OpenEd.git",
+            repo: "binder-examples/jupyter-stacks-datascience",
             ref: "master",
         },
         codeMirrorConfig: {
