@@ -3,14 +3,20 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: installation
-- file: Basics
-- file: Module1-2
-- file: Module 3
-- file: Modules4-5
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+defaults:  # The defaults key will be applied to all chapters and sub-sections
+  titlesonly: True
+parts:
+  - caption: Basics and installation
+    numbered: True  
+    chapters:
+      - file: installation
+      - file: Basics
+
+  - caption: Module 1
+    numbered: True  
+    chapters: 
+      - file: Module1
+
+
 
 
