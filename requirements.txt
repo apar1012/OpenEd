@@ -3,6 +3,6 @@ matplotlib
 numpy
 pyserial
 keyboard
-python==3.9
+python==3.8
 scipy
 statsmodels
